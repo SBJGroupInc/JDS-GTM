@@ -1,5 +1,8 @@
 VPRJRCL ;SLC/KCM -- Control the HTTP listener
  ;
+GODEFAULT; start up REST listener with defaults
+ D GO(9080)
+ Q
 GO(PORT) ; start up REST listeners
  I $G(PORT) D
  . D SPORT(PORT)
